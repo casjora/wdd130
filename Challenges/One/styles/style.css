@@ -1,0 +1,49 @@
+#all {
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+body{
+    background-color: pink;
+}
+.topic{
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+}
+.author{
+    font-weight: bold;
+    color: white;
+}
+.topic:hover{
+    color: black;
+}
+.quote{
+    color: white;
+    text-align: center;
+    font-size: .8em;
+    align-self: center;
+}
+
+.pic img{
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+ol{
+    display: inline-block;
+    text-align: left;
+    font-weight: bold;
+}
+.quote2{
+    font-size: xx-large;
+    color: white;
+}
+footer p{
+    margin: 0;
+}
+footer {
+    margin-bottom: 20px;
+}
