@@ -205,6 +205,234 @@ main section img{
     grid-row: 4/9;
 }
 
+/*starting the styles for the Rivers page here*/
+
+.rivers-grid{
+    display: grid;
+    grid-template-columns: repeat(33,1fr);
+    grid-template-rows: repeat(100,1fr);
+}
+#hero-r{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+#heror-box {
+    grid-column: 1/4;
+    grid-row: 1/1;
+    z-index: -2;
+}
+/*Flip card effects, as obtained in W3 schools:*/
+.salmon-card{
+    grid-column: 12/23;
+    grid-row: 35/85;
+    justify-self: left;
+}
+.desolation-card{
+
+    grid-column: 2/11;
+    grid-row: 5/85;
+}
+.gcanyon-card{
+    grid-column: 24/33;
+    grid-row: 5/85;
+}
+
+#heror-img{
+    width:100%;
+}
+.cardr1-img{
+    border: 2px solid black;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    width: 100%;
+}
+.cardr2-img{
+    border: 2px solid black;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    width: 100%;
+}
+.cardr3-img{
+    border: 2px solid black;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    width: 100%;
+}
+.cardr1-img:hover{
+    transform: scale(1.02); 
+}
+.cardr2-img:hover{
+    transform: scale(1.02); 
+}
+.cardr3-img:hover{
+    transform: scale(1.02); 
+}
+.cardr1-img:hover + .text-box1{
+    transform: scale(1.1); 
+    visibility: visible;
+}
+.cardr2-img:hover +.text-box2{
+    transform: scale(1.1); 
+    visibility: visible;
+}
+
+.cardr3-img:hover + .text-box3{
+    transform: scale(1.1); 
+    visibility: visible;
+}
+.gcanyon-card h2,.desolation-card h2,.salmon-card h2{
+    font-size: 0.85em;
+    font-style: italic;
+}
+.text-box1,.text-box2,.text-box3{
+    font-size: 0.75em;
+    visibility:hidden;
+
+}
+.gcanyon-card h3,.desolation-card h3,.salmon-card h3{
+
+    font-style: italic;
+    font-weight: bolder;
+    color: #bbb;
+}
+.gcanyon-card p,.desolation-card p,.salmon-card p{
+    font-size: 0.75em;
+    font-style:normal;
+    font-weight: bold;
+}
+
+
+
+
+.flip-card1 {
+    background-color: transparent;
+
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+
+  /* This container is needed to position the front and back side */
+  .flip-inner1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card1:hover .flip-inner1 {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-front1, .flip-back1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-front1 {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-back1 {
+    background-color: dodgerblue;
+    color: white;
+    font-size: small;
+    transform: rotateY(180deg);
+  }
+
+
+.flip-card2 {
+    background-color: transparent;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+  }
+  
+  .flip-inner2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card2:hover .flip-inner2 {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-front2, .flip-back2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  .flip-front2 {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-back2 {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+    font-size: small;
+  }
+ 
+.flip-card3 {
+    background-color: transparent;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+  }
+  
+  .flip-inner3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card3:hover .flip-inner3 {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-front3, .flip-back3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  .flip-front3 {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-back3 {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+    font-size: small;
+  }
+
+
+
+
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
