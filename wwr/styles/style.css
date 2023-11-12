@@ -73,7 +73,6 @@ footer{
     background-color:#183059;
     color: whitesmoke;
     padding: 25px 50px;
-    margin-top: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -225,17 +224,17 @@ main section img{
 /*Flip card effects, as obtained in W3 schools:*/
 .salmon-card{
     grid-column: 12/23;
-    grid-row: 35/85;
+    grid-row: 35/100;
     justify-self: left;
 }
 .desolation-card{
 
     grid-column: 2/11;
-    grid-row: 5/85;
+    grid-row: 5/100;
 }
 .gcanyon-card{
     grid-column: 24/33;
-    grid-row: 5/85;
+    grid-row: 5/100;
 }
 
 #heror-img{
